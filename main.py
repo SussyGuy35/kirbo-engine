@@ -362,7 +362,7 @@ while True:
     
     kirbo_engine.update()
     
-    base_screen.blit(font.render("Player state: " + str(kirbo_engine.player.state)+"\nFPS: "+ str(round(clock.get_fps())),(0,0,0),False),(0,0))
+    base_screen.blit(font.render("Player state: " + str(kirbo_engine.player.state)+"\nFPS: "+ str(round(clock.get_fps())),False,(0,0,0)),(0,0))
     
     screen.blit(pygame.transform.scale(base_screen, screen.get_rect().size), (0,0))
     pygame.display.flip()
